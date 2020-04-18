@@ -1,0 +1,10 @@
+$color-text: #ffffffff;
+$backgroudColor: #80bb35;
+.navbar {
+  background-color: $backgroudColor;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 25px;
+  color: $color-text;
+}

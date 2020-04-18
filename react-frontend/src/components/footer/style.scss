@@ -1,0 +1,30 @@
+$color-text: #ffffffff;
+$color-icon: #f36f21;
+$background-main: #65932a;
+.footer {
+  background: $background-main;
+  .fb-page {
+    margin-left: 30px;
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+.text-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 17px 10px 10px 32px;
+  color: $color-text;
+}
+.text {
+  color: $color-text;
+  font-weight: 500;
+  padding: 0 5px 5px 50px;
+  text-decoration: none;
+}
+.decoration {
+  list-style: none;
+  margin-left: 10px;
+  & li {
+    margin-top: 3px;
+  }
+}
