@@ -12,8 +12,11 @@ module.exports = {
       max: 10
     },
     migrations: {
-      directory: __dirname + "/migrations",
+      directory: __dirname + "/config/db/migrations",
     },
+    seeds: {
+      directory: __dirname + "/config/db/seeds",
+    }
   },
   production: {
     client: "mysql",
@@ -21,6 +24,9 @@ module.exports = {
       user: process.env.username,
       password: process.env.password,
       database: process.env.dbname
+    },
+    migrations: {
+      directory: __dirname + "/config/db/migrations",
     },
   },
 

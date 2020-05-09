@@ -1,6 +1,6 @@
+const chatText = require('./chat/chatText')
 
-
-let initSockets = (io){
-
+let initSockets = (io) => {
+  chatText(io)
 }
 module.exports = initSockets

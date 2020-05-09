@@ -19,31 +19,7 @@ const ListBlog = () => {
             </div>
           </div>
         </div>
-
-        <div className="col-sm-4">
-          <div className="card">
-            <img className="card-img-top" src="http://csfood.vn/wp-content/uploads/2019/03/combo1.png" alt="Card image cap" style={{ height: '300px' }} />
-            <div className="card-body">
-              <h5 className="card-title">Special title treatment</h5>
-              <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" className="btn btn-primary">Chi tiết</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="col-sm-4">
-          <div className="card">
-            <img className="card-img-top" src="http://csfood.vn/wp-content/uploads/2019/03/combo1.png" alt="Card image cap" style={{ height: '300px' }} />
-            <div className="card-body">
-              <h5 className="card-title">Special title treatment</h5>
-              <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" className="btn btn-primary">Chi tiết</a>
-            </div>
-          </div>
-        </div>
       </div>
-
-
       <div className='col-sm-12'
         style={{ textAlign: 'center', }}
       >

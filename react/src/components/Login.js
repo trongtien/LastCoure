@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
+
 const Login = ({ isCloseForm }) => {
+
   const isCloseLogin = (e) => {
     e.preventDefault()
     isCloseForm()
   }
+
   return (
     <div className='login'>
       <div className="col-sm-6 form-login">
@@ -12,6 +15,7 @@ const Login = ({ isCloseForm }) => {
           <h1>ĐĂNG NHẬP</h1>
           <p
             onClick={isCloseLogin}
+
           ><i className="fas fa-times"></i></p>
         </div>
         <form>

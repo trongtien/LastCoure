@@ -52834,11 +52834,13 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _react = _interopRequireDefault(require("react"));
+var _react = _interopRequireWildcard(require("react"));
 
 var _reactRedux = require("react-redux");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
 var Login = function Login(_ref) {
   var isCloseForm = _ref.isCloseForm;
@@ -53303,84 +53305,22 @@ var ListProduct = function ListProduct() {
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "card",
     style: {
-      width: '18rem',
-      position: 'relative'
+      width: '18rem'
     }
   }, /*#__PURE__*/_react.default.createElement("img", {
     className: "card-img-top",
     src: "http://csfood.vn/wp-content/uploads/2019/03/combo1.png",
-    alt: "Card image cap"
-  }), /*#__PURE__*/_react.default.createElement("p", {
-    className: "card-add",
+    alt: "Card image cap",
     style: {
-      position: 'absolute',
-      marginTop: '28px',
-      color: '#333333',
-      border: '2px solid #333333',
-      marginLeft: '230px',
-      fontSize: '27px',
-      borderRadius: '50%',
-      padding: '5px',
-      cursor: 'pointer',
-      display: 'none'
+      cursor: "pointer"
     }
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-cart-arrow-down"
-  })), /*#__PURE__*/_react.default.createElement("div", {
-    className: "card-body"
-  }, /*#__PURE__*/_react.default.createElement("h5", {
-    className: "card-title",
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-sm-12 card-body",
     style: {
-      fontWeight: '600',
-      fontSize: '22px',
-      color: '#666'
+      display: 'flex'
     }
-  }, "Tr\xE1i c\xE2y b\u1ED1n m\xF9a"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "card-text",
-    style: {
-      color: 'red',
-      fontWeight: '500',
-      fontSize: '20px'
-    }
-  }, "300.000"), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "btn btn-primary",
-    style: {
-      marginLeft: '10px'
-    }
-  }, "Mua Ngay"), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "btn btn-primary",
-    style: {
-      marginLeft: '40px'
-    }
-  }, "Chi Ti\u1EBFt")))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-sm-3"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "card",
-    style: {
-      width: '18rem',
-      position: 'relative'
-    }
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "card-img-top",
-    src: "http://csfood.vn/wp-content/uploads/2019/03/combo1.png",
-    alt: "Card image cap"
-  }), /*#__PURE__*/_react.default.createElement("p", {
-    style: {
-      position: 'absolute',
-      marginTop: '230px',
-      color: '#fff',
-      marginLeft: '45px'
-    }
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-cart-arrow-down"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    style: {
-      marginLeft: '5px'
-    }
-  }, "Th\xEAm V\xE0o Gi\u1ECF H\xE0ng"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "card-body"
+    className: "col-sm-10"
   }, /*#__PURE__*/_react.default.createElement("h5", {
     className: "card-title",
     style: {
@@ -53395,125 +53335,25 @@ var ListProduct = function ListProduct() {
       fontWeight: '500',
       fontSize: '20px'
     }
-  }, "300.000"), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "btn btn-primary",
+  }, "300.000")), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-sm-2",
     style: {
-      marginLeft: '10px'
-    }
-  }, "Mua Ngay"), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "btn btn-primary",
-    style: {
-      marginLeft: '40px'
-    }
-  }, "Chi Ti\u1EBFt")))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-sm-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "card",
-    style: {
-      width: '18rem',
       position: 'relative'
     }
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "card-img-top",
-    src: "http://csfood.vn/wp-content/uploads/2019/03/combo1.png",
-    alt: "Card image cap"
-  }), /*#__PURE__*/_react.default.createElement("p", {
+  }, /*#__PURE__*/_react.default.createElement("p", {
+    className: "card-add"
+  }, /*#__PURE__*/_react.default.createElement("i", {
+    className: "fas fa-cart-arrow-down",
     style: {
       position: 'absolute',
-      marginTop: '230px',
-      color: '#fff',
-      marginLeft: '45px'
+      lineHeight: "27px"
     }
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-cart-arrow-down"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    style: {
-      marginLeft: '5px'
-    }
-  }, "Th\xEAm V\xE0o Gi\u1ECF H\xE0ng"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "card-body"
-  }, /*#__PURE__*/_react.default.createElement("h5", {
-    className: "card-title",
-    style: {
-      fontWeight: '600',
-      fontSize: '22px',
-      color: '#666'
-    }
-  }, "Tr\xE1i c\xE2y b\u1ED1n m\xF9a"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "card-text",
-    style: {
-      color: 'red',
-      fontWeight: '500',
-      fontSize: '20px'
-    }
-  }, "300.000"), /*#__PURE__*/_react.default.createElement("a", {
+  })))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "col-sm-12"
+  }, /*#__PURE__*/_react.default.createElement("a", {
     href: "#",
-    className: "btn btn-primary",
-    style: {
-      marginLeft: '10px'
-    }
-  }, "Mua Ngay"), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "btn btn-primary",
-    style: {
-      marginLeft: '40px'
-    }
-  }, "Chi Ti\u1EBFt")))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-sm-3"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "card",
-    style: {
-      width: '18rem',
-      position: 'relative'
-    }
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "card-img-top",
-    src: "http://csfood.vn/wp-content/uploads/2019/03/combo1.png",
-    alt: "Card image cap"
-  }), /*#__PURE__*/_react.default.createElement("p", {
-    style: {
-      position: 'absolute',
-      marginTop: '230px',
-      color: '#fff',
-      marginLeft: '45px'
-    }
-  }, /*#__PURE__*/_react.default.createElement("i", {
-    className: "fas fa-cart-arrow-down"
-  }, /*#__PURE__*/_react.default.createElement("span", {
-    style: {
-      marginLeft: '5px'
-    }
-  }, "Th\xEAm V\xE0o Gi\u1ECF H\xE0ng"))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "card-body"
-  }, /*#__PURE__*/_react.default.createElement("h5", {
-    className: "card-title",
-    style: {
-      fontWeight: '600',
-      fontSize: '22px',
-      color: '#666'
-    }
-  }, "Tr\xE1i c\xE2y b\u1ED1n m\xF9a"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "card-text",
-    style: {
-      color: 'red',
-      fontWeight: '500',
-      fontSize: '20px'
-    }
-  }, "300.000"), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "btn btn-primary",
-    style: {
-      marginLeft: '10px'
-    }
-  }, "Mua Ngay"), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "btn btn-primary",
-    style: {
-      marginLeft: '40px'
-    }
-  }, "Chi Ti\u1EBFt"))))), /*#__PURE__*/_react.default.createElement("div", {
+    className: "btn btn-primary btn-success-card"
+  }, "Mua Ngay"))))), /*#__PURE__*/_react.default.createElement("div", {
     className: "col-sm-12",
     style: {
       textAlign: 'center'
@@ -53572,46 +53412,6 @@ var ListBlog = function ListBlog() {
       padding: '20px 30px 20px 30px'
     }
   }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-sm-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "card"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "card-img-top",
-    src: "http://csfood.vn/wp-content/uploads/2019/03/combo1.png",
-    alt: "Card image cap",
-    style: {
-      height: '300px'
-    }
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "card-body"
-  }, /*#__PURE__*/_react.default.createElement("h5", {
-    className: "card-title"
-  }, "Special title treatment"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "card-text"
-  }, "With supporting text below as a natural lead-in to additional content."), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "btn btn-primary"
-  }, "Chi ti\u1EBFt")))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "col-sm-4"
-  }, /*#__PURE__*/_react.default.createElement("div", {
-    className: "card"
-  }, /*#__PURE__*/_react.default.createElement("img", {
-    className: "card-img-top",
-    src: "http://csfood.vn/wp-content/uploads/2019/03/combo1.png",
-    alt: "Card image cap",
-    style: {
-      height: '300px'
-    }
-  }), /*#__PURE__*/_react.default.createElement("div", {
-    className: "card-body"
-  }, /*#__PURE__*/_react.default.createElement("h5", {
-    className: "card-title"
-  }, "Special title treatment"), /*#__PURE__*/_react.default.createElement("p", {
-    className: "card-text"
-  }, "With supporting text below as a natural lead-in to additional content."), /*#__PURE__*/_react.default.createElement("a", {
-    href: "#",
-    className: "btn btn-primary"
-  }, "Chi ti\u1EBFt")))), /*#__PURE__*/_react.default.createElement("div", {
     className: "col-sm-4"
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "card"
@@ -54406,7 +54206,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49718" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51969" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
