@@ -1,9 +1,14 @@
 import React, { useEffect } from 'react'
-import { getCallApi } from '../config/apiCaller'
+import { fetchListProduct } from "../apis/producAPI"
 import { connect } from 'react-redux'
-const ListProduct = () => {
+const ListProduct = ({ loadProduct, changeProduct, product }) => {
   useEffect(() => {
-  }, [])
+    loadProduct()
+    changeProduct((data) => {
+      console.log(product.push(data))
+    })
+    console.log(product)
+  })
   return (
     <div className="row">
       <div className='col-sm-12 header-title' style={{ padding: '20px 30px 20px 30px', position: 'relative', marginTop: '10px' }} >
@@ -57,18 +62,23 @@ const ListProduct = () => {
     </div >
   )
 }
-
-const listProduct = () => {
+const loadProduct = () => {
   return (dispatch) => {
-
+    return fetchListProduct().then(response => {
+      dispatch(changeProduct(response.data))
+    })
   }
 }
-
-mapStateToProps = ({ productReducer }) => {
+const changeProduct = (data) => {
+  return (dispatch) => {
+    dispatch({ type: 'CHANGE_PRODUCT', product: data })
+  }
+}
+const mapStateToProps = ({ productReducer }) => ({
   product: productReducer.product
+})
+const mapDispatchToProps = {
+  loadProduct,
+  changeProduct
 }
-mapDispatchToProps = {
-  listProduct
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(ListProduc)
+export default connect(mapStateToProps, mapDispatchToProps)(ListProduct)

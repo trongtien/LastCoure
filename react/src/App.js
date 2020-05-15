@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { Provider, connect } from 'react-redux'
+import { Provider } from 'react-redux'
 
 import Header from './components/Header'
 import Slider from './components/Slider'
@@ -14,12 +14,11 @@ import Blog from './pages/Blog'
 import DetailBlog from './pages/DetailBlog'
 import Product from './pages/Product'
 
-const App = ({ store, isActive }) => {
+const App = ({ store }) => {
   return (
     <Provider store={store}>
       <BrowserRouter>
         <div style={{ position: 'relative' }}>
-          {isActive === true ? <Login /> : ''}
           <Header />
           <Slider />
           <Message />
@@ -50,8 +49,4 @@ const App = ({ store, isActive }) => {
     </Provider>
   )
 }
-const mapStateToProps = ({ helperReducer }) => ({
-  isActive: helperReducer.isActive
-})
-const mapDispatchToProps = {}
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

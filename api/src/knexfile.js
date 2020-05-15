@@ -3,13 +3,9 @@ module.exports = {
   development: {
     client: "mysql",
     connection: {
-      user: process.env.username,
-      password: process.env.password,
-      database: process.env.dbname
-    },
-    pool: {
-      min: 2,
-      max: 10
+      user: "root",
+      password: "",
+      database: "luanvan"
     },
     migrations: {
       directory: __dirname + "/config/db/migrations",

@@ -14,7 +14,7 @@ let getApiService = (url) => {
   return intance.get(url);
 }
 
-export {
+export default {
   handleSuccess,
   handleError,
   getApiService
